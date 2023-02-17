@@ -1,0 +1,32 @@
+
+
+
++----------------+       +----------------+
+|   Predictor    |       |    Instance    |
++----------------+       +----------------+
+| -instances:List<Instance> | -outlook:String |
+| -filePath:String       | -temperature:double |
++----------------+       | -humidity:double |
+| +add(Instance)         | -windy:String |
+| +getActivity(String,double,double,String):String | -play:String |
+| +writeToFile()         | +Instance(String) |
+| -readFromFile()        | +getOutlook():String |
+                        | +getTemperature():double |
+                        | +getHumidity():double |
+                        | +getWindy():String |
+                        | +getPlay():String |
+                        | +setOutlook(String):void |
+                        | +setTemperature(double):void |
+                        | +setHumidity(double):void |
+                        | +setWindy(String):void |
+                        | +setPlay(String):void |
+                        | +toString():String |
+                        +------------------+
+
+
+
+Explanations:
+
+The Predictor class represents a set of weather forecast data and provides methods to add a new instance of data, retrieve corresponding activity based on various parameters, and write the data to a file.
+
+The Instance class represents an individual instance of weather forecast data, containing information such as outlook, temperature, humidity, wind, and activity. It provides methods for retrieving and setting this information, as well as for converting a character string into an instance of data.
